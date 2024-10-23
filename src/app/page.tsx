@@ -68,7 +68,7 @@ export default function Home() {
           </Typography>
           <div>Help build this project further by contributing below.</div>
           <Link
-            href=""
+            href="https://github.com/KrishDesai/bourbon."
             target="_blank"
           >
             <Button size="tiny" variant="ghost">
