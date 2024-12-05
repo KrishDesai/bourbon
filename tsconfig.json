@@ -41,8 +41,10 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
-  ],
+    ".next/types/**/*.ts",
+    "syllabi-backend/**/*",
+    "src/**/*"
+, "syllabi-backend/server.mjs"  ],
   "exclude": [
     "node_modules"
   ]
