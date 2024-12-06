@@ -1,29 +1,28 @@
-module.exports = {
+export default {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
   },
   extends: [
     'standard-with-typescript',
     'plugin:react/recommended',
-    'prettier'
+    'prettier',
   ],
   overrides: [
     {
       env: {
-        node: true
+        node: true,
       },
       files: ['.eslintrc.{js,cjs}'],
       parserOptions: {
-        sourceType: 'script'
-      }
-    }
+        sourceType: 'script',
+      },
+    },
   ],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
     project: './tsconfig.json',
-    exclude: ['**/*.eslintrc.js']
   },
   settings: {
     'import/resolver': {
@@ -32,14 +31,14 @@ module.exports = {
           ['@', './src'],
           ['@ui', './src/components/ui'],
           ['@components', './src/components'],
-          ['@lib', './src/lib']
+          ['@lib', './src/lib'],
         ],
-        extensions: ['.ts', '.tsx', '.js', '.jsx', '.json']
-      }
+        extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
+      },
     },
     react: {
-      version: 'detect'
-    }
+      version: 'detect',
+    },
   },
   plugins: ['react'],
   rules: {
@@ -55,6 +54,6 @@ module.exports = {
     '@typescript-eslint/indent': 0,
     '@typescript-eslint/strict-boolean-expressions': 0,
     '@typescript-eslint/explicit-function-return-type': 0,
-    '@typescript-eslint/space-before-function-paren': 0
-  }
-}
+    '@typescript-eslint/space-before-function-paren': 0,
+  },
+};
