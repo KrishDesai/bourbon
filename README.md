@@ -1,4 +1,4 @@
-INFO 1998 - Trends in Web Development
+INFO 1998 - Trends in Web Development <br />
 Made with Next.js, TypeScript, Tailwind, Clerk and more. 
 
 # Bourbon - Cornell Syllabi Viewer
